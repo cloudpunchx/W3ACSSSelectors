@@ -11,7 +11,12 @@ html{
 
 h1 {
     display: inline-block;
-    padding: 15px;
+    padding: 25px;
+}
+
+a:link{
+    font-weight: bold;
+    color: rgb(255, 0, 149);
 }
 
 a:visited{
@@ -22,14 +27,52 @@ a:hover{
     color: crimson;
 }
 
+a:active{
+    color: darkturquoise;
+}
+
 a{
     text-decoration: none;
     font-size: 20px;
     padding: 15px;
 }
 
+/*Adjacent Selector*/
+.logo + h1 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: teal;
+    border-radius: 25px;
+}
+
+/*Child Selector*/
+nav > a {
+    padding: 45px;
+    background-color: lavender;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #storefront {
     height: 500px;
-    border-radius: 15%;
+    border-radius: 12%;
     padding: 50px;
+}
+
+/*Descendant Selector*/
+div button {
+    border: none;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(245, 172, 16);
+    background-color: lavender;
+}
+
+section img {
+    height: 500px;
+    padding: 33px;
+}
+
+img {
+    border-radius: 190px;
 }
